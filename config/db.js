@@ -11,7 +11,7 @@ const { BD_NOMBRE, BD_USER, BD_PASS, BD_HOST } = process.env;
 // ?? hace que lea el valor de la variable y ponga ese valor, si no puede leerlo coloca lo que este despues, en este caso ""
 const db = new Sequelize(BD_NOMBRE, BD_USER, BD_PASS ?? "", {
   host: BD_HOST,
-  port: "3306",
+  port: "3307",
   dialect: "mysql",
   define: {
     timestamps: true,
